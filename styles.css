@@ -149,3 +149,52 @@
 .archive-deck { max-width: 55ch; font-size: clamp(1.05rem, 1.6vw, 1.45rem); line-height: 1.6; margin-bottom: 1.35rem; white-space: pre-line; }
 .archive-cover { display: block; width: fit-content; max-width: 100%; margin: .75rem 0 1.55rem; }
 .archive-cover img { max-width: 100%; max-height: min(60vh, 27rem); height: auto; }
+
+/* Ta Academy's participant archive */
+.ta-count { max-width: 46rem; margin-top: .9rem; font-size: clamp(1.06rem, 1.4vw, 1.32rem); line-height: 1.65; }
+.ta-profile .profile-meta a { width: fit-content; text-decoration: underline; text-underline-offset: .2em; }
+.ta-grid, .ta-gallery { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 2rem clamp(1rem, 2vw, 2rem); margin-top: 1.6rem; }
+.ta-card { display: block; }
+.ta-card-image { overflow: hidden; background: var(--soft); }
+.ta-card-image img { width: 100%; height: auto; aspect-ratio: 2.25; object-fit: cover; }
+.ta-card h3, .ta-entry h2, .ta-shows h3 { margin: 0; font-weight: 530; letter-spacing: -.035em; line-height: 1.26; }
+.ta-card h3 { margin-top: .65rem; font-size: clamp(1.25rem, 2.3vw, 2.2rem); }
+.ta-card:hover h3, .ta-profile .profile-meta a:hover { color: var(--active); }
+.ta-section-nav { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: clamp(1rem, 2.2vw, 2.3rem); border-block: 1px solid var(--line); margin: 1.5rem 0 clamp(1.6rem, 3.5vw, 3.9rem); padding: .35rem 0; }
+.ta-section-nav a { padding-block: .62rem; color: var(--dim); font-size: .96rem; }
+.ta-section-nav a:hover, .ta-section-nav [aria-current=page] { color: var(--active); }
+.ta-section-nav [aria-current=page] { text-decoration: underline; text-underline-offset: .25em; }
+.ta-chapter > .ta-section-nav:last-child { margin: clamp(2rem, 4vw, 4.5rem) 0 0; }
+.ta-bio, .ta-exhibition-head, .ta-entry.illustrated { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.08fr); gap: clamp(1.5rem, 5vw, 6rem); align-items: start; }
+.ta-photo img { width: 100%; height: auto; background: var(--soft); }
+.ta-photo figcaption { color: var(--dim); font-size: .92rem; line-height: 1.55; margin-top: .5rem; }
+.ta-wide-photo { margin-top: clamp(2rem, 4vw, 4.5rem); }
+.ta-intro { max-width: 58rem; }
+.ta-series { margin-top: 2.2rem; }
+.ta-entry { border-top: 1px solid var(--line); padding: clamp(1.5rem, 3vw, 3.2rem) 0; }
+.ta-entry:last-child { padding-bottom: 0; }
+.ta-entry h2 { font-size: clamp(1.5rem, 3vw, 3rem); }
+.ta-entry .body-copy { margin-top: .8rem; max-width: 66ch; }
+.ta-date { color: var(--dim); font-variant-numeric: tabular-nums; font-size: .97rem; line-height: 1.55; }
+.ta-entry .ta-date { margin-bottom: .55rem; }
+.ta-entry-photos { display: grid; row-gap: 1.1rem; }
+.ta-shows { list-style: none; margin: 1.5rem 0 0; padding: 0; }
+.ta-shows li { display: grid; align-items: baseline; grid-template-columns: minmax(13rem, .9fr) minmax(0, 1.5fr) minmax(0, 1fr); gap: .3rem 1.25rem; border-top: 1px solid var(--line); padding: 1.15rem 0; }
+.ta-shows h3 { font-size: clamp(1.15rem, 1.65vw, 1.75rem); }
+.ta-shows li > span:last-child { line-height: 1.55; }
+@media (min-width: 1100px) {
+  .ta-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+  .ta-card-image img { aspect-ratio: 1.6; }
+}
+@media (max-width: 760px) {
+  .ta-bio, .ta-exhibition-head, .ta-entry.illustrated { grid-template-columns: minmax(0,1fr); }
+  .ta-shows li { grid-template-columns: 1fr; }
+  .ta-shows li > span:empty { display: none; }
+}
+@media (max-width: 580px) {
+  .ta-card-image img { aspect-ratio: 1.5; }
+  .ta-section-nav { column-gap: .95rem; }
+  .ta-gallery { grid-template-columns: 1fr; }
+  .ta-profile .profile-logo { max-width: 18rem; }
+}
+.ta-contact { max-width: 60ch; margin-top: 2.5rem; padding-inline-start: 1rem; border-inline-start: 2px solid var(--active); font-size: 1.05rem; line-height: 1.65; }

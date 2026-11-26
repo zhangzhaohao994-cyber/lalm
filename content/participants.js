@@ -858,12 +858,18 @@ const participants = [
     "id": "ta-academy",
     "letter": "T",
     "name": {
-      "en": "Ta-Academy",
-      "zh": "塔院"
+      "en": "Ta Academy",
+      "zh": "塔院",
+      "ja": "塔院",
+      "ko": "타아카데미",
+      "fr": "Ta Academy"
     },
     "attendee": {
       "zh": "阿莫",
-      "en": "Taikonot"
+      "en": "Amo (Taikonot)",
+      "ja": "阿莫（アモ）",
+      "ko": "아모",
+      "fr": "Amo (Taikonot)"
     },
     "location": {
       "en": "Chengdu",
@@ -886,6 +892,24 @@ const participants = [
         "We carried out basic art education in Chengdu, organized art events, and participated in art activities and exhibition projects across the country under the name of Ta-Academy, attempting to create a unique art ecosystem model in China. The space operates in a more accessible and low-pretentious manner, with friends exploring and working together.",
         "The aim of our activities is:",
         "Relaxed but serious☆~"
+      ],
+      "ja": [
+        "塔院は2022年末に始めた実験的な芸術教育のプロジェクトです。2023年7月、成都に活動拠点を開きました。",
+        "成都では美術の基礎を学ぶ場やライブイベントを開き、塔院として中国各地の催しや展覧会にも参加しています。仲間と手を動かし、身の丈に合ったやり方で場所を運営しながら、中国で芸術が育つ別の環境を探っています。",
+        "私たちが活動で大事にしているのは、",
+        "気楽に、そして真剣に。"
+      ],
+      "ko": [
+        "타아카데미는 2022년 말에 시작한 실험적인 예술교육 프로젝트입니다. 2023년 7월 청두에 공간을 열었습니다.",
+        "우리는 청두에서 기초 예술교육과 현장 행사를 열고 타아카데미라는 이름으로 중국 각지의 예술 행사와 전시에 참여합니다. 친구들과 함께 짐을 나누고 각자 할 수 있는 일부터 시작하면서 중국에서 또 다른 예술 생태계가 가능한지 살펴봅니다.",
+        "우리가 활동에서 중요하게 여기는 것은",
+        "편안하고 진지하게."
+      ],
+      "fr": [
+        "Nous avons lancé ce projet expérimental d’éducation artistique à la fin de 2022. En juillet 2023, nous avons ouvert un lieu à Chengdu.",
+        "À Chengdu, nous proposons une initiation à l’art et organisons des rencontres. Nous participons aussi à des expositions et à des événements dans toute la Chine sous le nom de Ta Academy. Nous cherchons à y faire vivre l’art autrement, en tenant le lieu avec des moyens modestes et en travaillant entre amis.",
+        "Notre devise ?",
+        "Dans la détente, avec sérieux."
       ]
     },
     "summary": {

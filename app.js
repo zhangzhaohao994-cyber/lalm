@@ -66,6 +66,30 @@
     const itemImage = item.illustration || entry.photos.find(p=>p.path===item.photo);
     return `<article class="subpage frame">${crumb([[tx('index'),'#/participants'],[name(entry),orgUrl(entry)],[tx(item.type)]])}<div class="inset"><p class="context">${html(tx(item.type))}${item.date ? ' · '+html(item.date) : ''}</p><h1 class="page-title">${html(local(item.title))}</h1><div class="item-body"><p class="lead">${html(local(item.body))}</p>${extLink(item.url,local(item.linkLabel)||tx('visit'))}${item.file ? `<a class="text-link" href="assets/${html(item.file)}" target="_blank" rel="noopener">${html(tx('document'))}</a>` : ''}</div>${itemImage ? `<div class="photo-list">${photo(itemImage)}</div>` : ''}</div></article>`;
   }
+  const taFiles = ['ta-pages', 'ta-photos', 'ta-learning', 'ta-events', 'ta-exhibitions'];
+  const loadedTaFiles = new Set();
+  let taState = 'idle';
+  function loadTaArchive() {
+    taState = 'loading';
+    const pending = taFiles.filter(file => !loadedTaFiles.has(file)).map(file => new Promise(resolve => {
+      const script = document.createElement('script');
+      script.src = 'content/' + file + '.js';
+      script.onload = () => { loadedTaFiles.add(file); script.remove(); resolve(); };
+      script.onerror = () => { script.remove(); resolve(); };
+      document.head.append(script);
+    }));
+    Promise.all(pending).then(() => {
+      taState = loadedTaFiles.size === taFiles.length ? 'ready' : 'failed';
+      const [section, id] = currentPath();
+      if (section === 'participants' && id === 'ta-academy') render();
+    });
+  }
+  function taRoute(entry, section) {
+    if (taState === 'ready') return taPages.render(entry, section, {lang, html, tx, local, crumb, row, orgUrl});
+    if (taState === 'idle') loadTaArchive();
+    const failed = taState === 'failed';
+    return {title:name(entry), markup:`<section class="subpage frame"><h1 class="page-title">${html(name(entry))}</h1><p role="status">${html(tx(failed ? 'gravityLoadFailed' : 'gravityLoading'))}</p>${failed ? `<button class="text-link" data-ta-retry>${html(tx('gravityRetry'))}</button>` : ''}</section>`};
+  }
   let gravityDataState = 'idle';
   function loadGravityData() {
     if (window.gravityArchive || gravityDataState === 'loading') return;
@@ -249,7 +273,10 @@
     }
     else if (section === 'participants' && path.length <= 3) {
       const entry = participants.find(org => org.id === id);
-      if (entry && !record) { markup = profile(entry); title = name(entry); }
+      if (id === 'ta-academy' && (!record || ['amo','learning','events','exhibitions'].includes(record))) {
+        ({markup, title} = taRoute(entry, record));
+      }
+      else if (entry && !record) { markup = profile(entry); title = name(entry); }
       else if (entry) { const item = entry.items.find(value => value.id === record); if (item) { markup = detail(entry,item); title = local(item.title); } }
     }
     if (!markup) { title=tx('notFound'); markup=`<section class="subpage frame"><h1 class="page-title">${html(title)}</h1><a class="text-link" href="#/participants">${html(tx('index'))}</a></section>`; }
@@ -304,6 +331,7 @@
   theme.addEventListener('click',()=>{appearance.set(document.documentElement.dataset.theme==='dark'?'light':'dark');appearanceLabels();});
   document.getElementById('footer').addEventListener('click',e=>{if(e.target.closest('[data-auto]')){appearance.set('auto');appearanceLabels();theme.focus();}});
   main.addEventListener('click',e=>{
+    if (e.target.closest('[data-ta-retry]')) { loadTaArchive(); render(); return; }
     if (e.target.closest('[data-gravity-retry]')) { loadGravityData(); render(); return; }
     const button=e.target.closest('[data-letter]');
     if (!button) return;
