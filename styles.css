@@ -198,3 +198,17 @@
   .ta-profile .profile-logo { max-width: 18rem; }
 }
 .ta-contact { max-width: 60ch; margin-top: 2.5rem; padding-inline-start: 1rem; border-inline-start: 2px solid var(--active); font-size: 1.05rem; line-height: 1.65; }
+
+/* Round the visible image area. Inset logos keep their own silhouettes. */
+:root { --image-radius: clamp(1rem, 2vw, 1.75rem); }
+.brand { --image-radius: .1875rem; }
+.timeline-thumb { --image-radius: .625rem; }
+img, .org-card, .profile-logo, .ta-card-image {
+  border-radius: var(--image-radius) var(--image-radius) 0 0;
+}
+.org-card, .profile-logo { overflow: hidden; }
+.card-image {
+  --inner-radius: calc(var(--image-radius) - 1px);
+  border-radius: var(--inner-radius) var(--inner-radius) 0 0;
+}
+.card-image img, .profile-logo img, .ta-card-image img { border-radius: 0; }
