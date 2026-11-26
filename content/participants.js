@@ -880,66 +880,7 @@ const participants = [
     },
     "thumb": "marks/ta-academy-chengdu.png",
     "photos": [],
-    "original": {
-      "zh": [
-        "塔院是在2022年的年末发起的一个实验性艺术教育项目，实体空间于2023年7月落地成都。",
-        "我们在成都开展基础美育、组织艺术现场，同时会以塔院的名义参加全国各地的艺术活动以及展览项目，试图在国内创造一种别样的艺术生态模式。空间以一种更适民间的低精致与轻量级的方式运转着，与朋友们一起探索、共同劳作。",
-        "我们活动的宗旨是！",
-        "轻松 但认真。"
-      ],
-      "en": [
-        "Ta-Academy was an experimental art education project initiated at the end of 2022. The physical space was established in Chengdu in July 2023.",
-        "We carried out basic art education in Chengdu, organized art events, and participated in art activities and exhibition projects across the country under the name of Ta-Academy, attempting to create a unique art ecosystem model in China. The space operates in a more accessible and low-pretentious manner, with friends exploring and working together.",
-        "The aim of our activities is:",
-        "Relaxed but serious☆~"
-      ],
-      "ja": [
-        "塔院は2022年末に始めた実験的な芸術教育のプロジェクトです。2023年7月、成都に活動拠点を開きました。",
-        "成都では美術の基礎を学ぶ場やライブイベントを開き、塔院として中国各地の催しや展覧会にも参加しています。仲間と手を動かし、身の丈に合ったやり方で場所を運営しながら、中国で芸術が育つ別の環境を探っています。",
-        "私たちが活動で大事にしているのは、",
-        "気楽に、そして真剣に。"
-      ],
-      "ko": [
-        "타아카데미는 2022년 말에 시작한 실험적인 예술교육 프로젝트입니다. 2023년 7월 청두에 공간을 열었습니다.",
-        "우리는 청두에서 기초 예술교육과 현장 행사를 열고 타아카데미라는 이름으로 중국 각지의 예술 행사와 전시에 참여합니다. 친구들과 함께 짐을 나누고 각자 할 수 있는 일부터 시작하면서 중국에서 또 다른 예술 생태계가 가능한지 살펴봅니다.",
-        "우리가 활동에서 중요하게 여기는 것은",
-        "편안하고 진지하게."
-      ],
-      "fr": [
-        "Nous avons lancé ce projet expérimental d’éducation artistique à la fin de 2022. En juillet 2023, nous avons ouvert un lieu à Chengdu.",
-        "À Chengdu, nous proposons une initiation à l’art et organisons des rencontres. Nous participons aussi à des expositions et à des événements dans toute la Chine sous le nom de Ta Academy. Nous cherchons à y faire vivre l’art autrement, en tenant le lieu avec des moyens modestes et en travaillant entre amis.",
-        "Notre devise ?",
-        "Dans la détente, avec sérieux."
-      ]
-    },
-    "summary": {
-      "en": "Ta-Academy began in late 2022 as an experiment in art education and opened a space in Chengdu in July 2023. There, friends work together on art education and live events. The project also takes part in exhibitions and gatherings elsewhere in China.",
-      "zh": "塔院是2022年末发起的实验性艺术教育项目，实体空间于2023年7月落地成都。朋友们在这里一起做基础美育、组织艺术现场，也以塔院的名义到各地参加展览与艺术活动。",
-      "ja": "塔院は2022年末に始まった実験的な芸術教育プロジェクト。2023年7月、成都にスペースを開いた。仲間と美術教育やライブイベントに取り組み、中国各地の展覧会や催しにも参加している。",
-      "ko": "타아카데미는 2022년 말 시작된 실험적 예술교육 프로젝트로, 2023년 7월 청두에 공간을 열었다. 친구들과 기초 예술교육과 현장 행사를 꾸리고 중국 각지의 전시와 모임에도 참여한다.",
-      "fr": "Ta-Academy débute fin 2022 comme une expérience d’éducation artistique et ouvre un lieu à Chengdu en juillet 2023. Des amis y travaillent ensemble sur l’initiation à l’art et des événements en direct. Le projet participe aussi à des expositions et rencontres ailleurs en Chine."
-    },
-    "items": [
-      {
-        "id": "working-in-a-smaller-group",
-        "type": "talk",
-        "title": {
-          "en": "Working in a smaller group",
-          "zh": "小规模深度共事",
-          "ja": "少人数で仕事を続ける",
-          "ko": "작은 집단으로 오래 일하기",
-          "fr": "Travailler dans la durée en petit groupe"
-        },
-        "body": {
-          "en": "Amo’s contribution in the LALM programme concerned a change in how an art space works: moving from wide recruitment to sustained collaboration with a smaller group. The session was listed in the organisational sharing programme on 19 November.",
-          "zh": "阿莫在LALM日程里的分享谈到艺术空间工作方式的转变：从招募更多人，转向和一个较小的群体长期、深入地共事。这一发言列于11月19日的组织分享环节。",
-          "ja": "LALMのプログラムで阿莫が取り上げる予定だったのは、広く人を募るやり方から、少人数でじっくり協働するやり方への移行。11月19日の各団体による発表に組まれていた。",
-          "ko": "LALM 일정에 실린 아모의 발표는 예술 공간의 운영 방식이 어떻게 달라지는지를 다뤘다. 널리 사람을 모집하던 방식에서 작은 집단과 오래 깊이 협력하는 방식으로 옮겨 가는 이야기로, 11월 19일 단체 발표 시간에 편성됐다.",
-          "fr": "L’intervention d’Amo annoncée au programme de LALM portait sur un changement dans la vie d’un lieu d’art : passer d’un recrutement large à une collaboration suivie avec un groupe plus restreint. La séance figurait au programme du 19 novembre."
-        },
-        "date": "2026-11-19"
-      }
-    ]
+    "items": []
   },
   {
     "id": "gravitational-body",

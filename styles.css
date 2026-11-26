@@ -212,3 +212,17 @@ img, .org-card, .profile-logo, .ta-card-image {
   border-radius: var(--inner-radius) var(--inner-radius) 0 0;
 }
 .card-image img, .profile-logo img, .ta-card-image img { border-radius: 0; }
+
+.ta-chapter .body-copy { overflow-wrap: anywhere; }
+.ta-motto { font-weight: 550; }
+.ta-profile > .ta-gallery { margin-block: 2rem; }
+.ta-plates { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.ta-exhibition-head .body-copy:first-child, .ta-entry .body-copy:first-child { margin-top: 0; }
+.ta-partners { list-style: none; padding: 0; margin: 0; }
+.ta-partners li { display: grid; grid-template-columns: minmax(4rem,.24fr) minmax(0,1fr); gap: 1rem; padding: 1.25rem 0; border-block-end: 1px solid var(--line); }
+.ta-partners h2 { margin: 0; font-weight: 530; font-size: clamp(1.15rem,1.85vw,1.8rem); line-height: 1.4; overflow-wrap: anywhere; }
+.ta-partners figure, .ta-partner-photo { max-width: 52rem; margin-top: 1rem; }
+@media (max-width: 580px) {
+  .ta-plates { grid-template-columns: 1fr; }
+  .ta-partners li { grid-template-columns: 1fr; gap: .35rem; }
+}

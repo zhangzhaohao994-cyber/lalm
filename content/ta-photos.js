@@ -92,11 +92,11 @@ const taPhotos = {
   "gallery-projection": {
     width: 1080, height: 608,
     caption: {
-      zh: "院内展览中的影像投影，上方搭着彩条篷布。",
-      en: "A video projection beneath a striped tarpaulin at Ta Academy.",
-      ja: "塔院の展示風景。縞模様の防水シートの下に映像が投影されている。",
-      ko: "타아카데미 전시장에 설치된 줄무늬 천막 아래로 비치는 영상.",
-      fr: "Une projection vidéo sous une bâche rayée à Ta Academy."
+      zh: "过年出走 展览现场照片",
+      en: "Installation view of To flee Chinese New Year.",
+      ja: "「春節に逃げ出す」の展示風景。",
+      ko: "《춘제에 달아나기》 전시 전경.",
+      fr: "Vue de l’exposition « Fuir le Nouvel An chinois »."
     }
   },
   "gallery-installation": {
@@ -112,21 +112,21 @@ const taPhotos = {
   "collaborations": {
     width: 1440, height: 810,
     caption: {
-      zh: "塔院在成都参与的一次合作活动。",
-      en: "A gathering from one of Ta Academy’s collaborations in Chengdu.",
-      ja: "塔院が成都で参加した共同企画の様子。",
-      ko: "타아카데미가 청두에서 참여한 협업 행사.",
-      fr: "Une rencontre organisée dans le cadre d’une collaboration de Ta Academy à Chengdu."
+      zh: "塔院在成都 A4 美术馆组织的一次分享会",
+      en: "A talk organised by Ta Academy at the A4 Art Museum in Chengdu.",
+      ja: "塔院が成都のA4美術館で開いたトークの様子。",
+      ko: "청두 A4 미술관에서 타아카데미가 마련한 이야기 모임.",
+      fr: "Une rencontre organisée par Ta Academy au musée d’art A4 de Chengdu."
     }
   },
   "academy-courtyard": {
     width: 1440, height: 540,
     caption: {
-      zh: "院子里，一人在彩条布旁工作。",
-      en: "Someone works beside a striped sheet in the courtyard.",
-      ja: "中庭で縞模様の布のそばで作業する人。",
-      ko: "안뜰에서 줄무늬 천 옆에 서서 작업하는 사람.",
-      fr: "Dans la cour, une personne travaille à côté d’une toile rayée."
+      zh: "老龚",
+      en: "Lao Gong",
+      ja: "Lao Gong",
+      ko: "Lao Gong",
+      fr: "Lao Gong"
     }
   }
 };
