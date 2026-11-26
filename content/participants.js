@@ -878,7 +878,7 @@ const participants = [
       "ko": "청두",
       "fr": "Chengdu"
     },
-    "thumb": "marks/ta-academy.png",
+    "thumb": "marks/ta-academy-chengdu.png",
     "photos": [],
     "original": {
       "zh": [
