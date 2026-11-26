@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="description" content="Live Art Live Meet is an artist-run network for live art. Explore the participating spaces, collectives and projects.">
+  <title>LALM — Live Art Live Meet</title>
+  <link rel="icon" type="image/png" href="assets/favicon-light.png">
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="script" href="language-picker.js">
+  <script src="appearance.js"></script>
+  <link rel="stylesheet" href="assets/animate.css-4.1.1/presets.css" media="(prefers-reduced-motion: no-preference)">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="content/languages.js"></script>
+  <script defer src="content/participants.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="header-inner frame">
+      <a class="brand" href="#/" aria-label="LALM — Live Art Live Meet"><img class="logo-light" src="assets/lalm-mark.png" width="41" height="26" alt=""><img class="logo-dark" src="assets/lalm-mark-dark.png" width="41" height="26" alt=""><span>LALM</span></a>
+      <nav id="nav" aria-label="Main navigation"></nav>
+      <div class="tools">
+        <div class="language-picker" id="language-picker">
+          <button type="button" class="lang-control" id="language" aria-label="Language, English" aria-haspopup="menu" aria-controls="language-menu" aria-expanded="false" data-value="en"><span id="lang-value" aria-hidden="true">EN</span><i aria-hidden="true"></i></button>
+          <div class="language-menu" id="language-menu" role="menu" aria-labelledby="language" hidden>
+            <button type="button" role="menuitemradio" aria-checked="true" tabindex="-1" data-language="en" lang="en">English</button>
+            <button type="button" role="menuitemradio" aria-checked="false" tabindex="-1" data-language="zh" lang="zh-Hans">中文</button>
+            <button type="button" role="menuitemradio" aria-checked="false" tabindex="-1" data-language="ja" lang="ja">日本語</button>
+            <button type="button" role="menuitemradio" aria-checked="false" tabindex="-1" data-language="ko" lang="ko">한국어</button>
+            <button type="button" role="menuitemradio" aria-checked="false" tabindex="-1" data-language="fr" lang="fr">Français</button>
+          </div>
+        </div>
+        <button type="button" id="theme" class="theme" aria-label="Appearance"><span aria-hidden="true" class="theme-icon"></span></button>
+      </div>
+    </div>
+  </header>
+  <script src="language-picker.js"></script>
+  <main id="main" tabindex="-1"><section class="hero"><div class="hero-center"><h1 class="hero-title" lang="en" aria-label="Live Art Live Meet"><span class="hero-line pulse"><span class="hero-word">Live Art</span></span><span class="hero-line pulse"><span class="hero-word">Live Meet</span></span></h1><p class="motto">Turning local experience into shared knowledge.</p><p class="intro">An artist-run network connecting live art spaces, collectives and projects across borders.</p></div><a href="#/participants" class="down-link">Participant index</a></section></main>
+  <footer id="footer"></footer>
+</body>
+</html>
